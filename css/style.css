@@ -1,0 +1,19 @@
+.form-field.error input {
+  border: 3px solid #dc3545;
+}
+
+.form-field.success input {
+  border: 3px solid #28a745;
+}
+
+.form-field.error small {
+  visibility: visible;
+}
+
+.form-field small {
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  color: #dc3545;
+  visibility: hidden;
+}
