@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="images/TLA icon.jpg" type="icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>The Learning Academy</title>
+  </head>
+  <body>
+    <!-- Header and Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">The Learning Academy</a>
+        <ul class="navbar-nav">
+          <li class="navbar-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#courses" class="nav-link">Courses</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#faq" class="nav-link">FAQs</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#instructors" class="nav-link">Our Instructors</a>
+          </li>
+          <!-- <li class="navbar-item">
+            <button class="btn btn-primary">
+              <a href="login.html" class="text-white text-decoration-none"
+                >Sign in</a
+              >
+            </button> 
+          </li> -->
+
+          <!-- Modal Code -->
+          <!-- <div
+            class="modal fade"
+            id="modal-toggle"
+            aria-hidden="true"
+            aria-labelledby="toggleLabel"
+            tabindex="-1"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="toggleLabel">
+                    <a href="">Sign In</a>
+                  </h5>
+                  <h5 class="modal-title" id="toggleLabel">
+                    <a href="">Sign In</a>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Show a second modal and hide this one with the button below.
+                </div>
+                <div class="modal-header">
+                  <button
+                    class="btn btn-primary"
+                    data-bs-target="#modal-toggle-2"
+                    data-bs-toggle="modal"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="modal-toggle-2"
+            aria-hidden="true"
+            aria-labelledby="toggleLabel2"
+            tabindex="-1"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="toggleLabel2">Sign Up</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn-primary"
+                    data-bs-target="#modal-toggle"
+                    data-bs-toggle="modal"
+                  >
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Modal -->
+          <!-- first modal -->
+          <div
+            class="modal fade"
+            id="modal-toggle-1"
+            aria-hidden="true"
+            aria-labelledby="modal-toggle-label-1"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header m-auto">
+                  <h4 class="modal-title" id="modal-toggle-label-1">
+                    <a
+                      href="#modal-toggle-1"
+                      role="button"
+                      data-bs-target="#modal-toggle-1"
+                      data-bs-toggle="modal"
+                      class="text-decoration-none p-3"
+                      >Sign In</a
+                    >
+                  </h4>
+                  <h4 class="modal-title" id="modal-toggle-label-2">
+                    <a
+                      href="#modal-toggle-2"
+                      role="button"
+                      data-bs-target="#modal-toggle-2"
+                      data-bs-toggle="modal"
+                      class="text-decoration-none p-3"
+                      >Sign Up</a
+                    >
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="btn-close justify-content-end"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body w-75 m-auto">
+                  <h2 class="mb-4 mt-4 text-center">Login</h2>
+                  <form
+                    class="m-auto"
+                    action="index.html"
+                    method="post"
+                    id="login"
+                  >
+                    <div class="row mb-3 m-auto">
+                      <label for="email" class="col-sm-4 col-form-label"
+                        >Email</label
+                      >
+                      <div class="col-sm-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          autocomplete="off"
+                          autofocus
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3 m-auto">
+                      <label for="password" class="col-sm-4 col-form-label"
+                        >Password</label
+                      >
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row mb-3 justify-content-center">
+                      <div class="col-2">
+                        <button class="btn btn-success" type="submit">
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+          <div
+            class="modal fade"
+            id="modal-toggle-2"
+            aria-hidden="true"
+            aria-labelledby="modal-toggle-label-2"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header m-auto">
+                  <h4 class="modal-title" id="modal-toggle-label-2">
+                    <a
+                      href="#modal-toggle-1"
+                      role="button"
+                      data-bs-target="#modal-toggle-1"
+                      data-bs-target="#modal-toggle-1"
+                      data-bs-toggle="modal"
+                      class="text-decoration-none p-3"
+                      >Sign In</a
+                    >
+                  </h4>
+                  <h4 class="modal-title" id="modal-toggle-label-2">
+                    <a
+                      href="#modal-toggle-2"
+                      role="button"
+                      data-bs-target="#modal-toggle-2"
+                      data-bs-target="#modal-toggle-2"
+                      data-bs-toggle="modal"
+                      class="text-decoration-none p-3"
+                      >Sign Up</a
+                    >
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body w-75 m-auto">
+                  <h2 class="mb-4 mt-4 text-center">Register</h2>
+                  <form
+                    action="#"
+                    class="m-auto form"
+                    method="post"
+                    id="signup"
+                  >
+                    <div class="row mb-3 m-auto">
+                      <label for="fname" class="col-sm-4 col-form-label"
+                        >First Name</label
+                      >
+                      <div class="col-sm-6 form-field">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fname"
+                          autocomplete="off"
+                          autofocus
+                        />
+                        <small>Error</small>
+                      </div>
+                    </div>
+                    <div class="row mb-3 m-auto m-auto">
+                      <label for="lname" class="col-sm-4 col-form-label"
+                        >Last Name</label
+                      >
+                      <div class="col-sm-6 form-field">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lname"
+                          autocomplete="off"
+                          autofocus
+                        />
+                        <small>Error</small>
+                      </div>
+                    </div>
+                    <div class="row mb-3 m-auto">
+                      <label for="email" class="col-sm-4 col-form-label"
+                        >Email</label
+                      >
+                      <div class="col-sm-6 form-field">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          autocomplete="off"
+                        />
+                        <small>Error</small>
+                      </div>
+                    </div>
+                    <div class="row mb-3 m-auto">
+                      <label for="password" class="col-sm-4 col-form-label"
+                        >Password</label
+                      >
+                      <div class="col-sm-6 form-field">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                        />
+                        <small>Error</small>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3 m-auto">
+                      <label for="cpassword" class="col-sm-4 col-form-label"
+                        >Confirm Password</label
+                      >
+                      <div class="col-sm-6 form-field">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password2"
+                        />
+                        <small>Error</small>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3 m-auto justify-content-center">
+                      <div class="col-2">
+                        <button class="btn btn-success" type="submit">
+                          Register
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal button -->
+          <li class="navbar-item">
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              href="#modal-toggle-1"
+              role="button"
+              >Sign in</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Showcase Content -->
+    <section class="bg-dark text-light p-5 text-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Become a <span class="text-warning">Job Ready Programmer</span>
+            </h1>
+            <p class="lead my-4 w-75">
+              We focus on teaching our students the fundamentals of the latest
+              and the greatest technologies to prepare them for their first
+              developer role.
+            </p>
+          </div>
+          <img
+            src="images/showcase.jpg"
+            alt="showcase image"
+            class="img-fluid w-50"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="p-5" id="courses">
+      <div class="container">
+        <h2 class="mb-4 text-center">Courses</h2>
+        <div class="row text-center">
+          <!-- CPP -->
+          <div class="col">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+                  class="mb-3"
+                />
+                <h4 class="card-title mb-3">Interview Preparation with C++</h4>
+                <p class="card-text text-center">
+                  Learn the core programming language from scratch and conquer
+                  the world of competitive programming and IoT.
+                </p>
+
+                <!-- Toggle button for c++ syllabus modal -->
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-toggle-cpp"
+                >
+                  Read More...
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal C++ -->
+          <div
+            class="modal fade"
+            id="modal-toggle-cpp"
+            aria-labelledby="modal-cpp"
+            aria-hidden="true"
+            tabindex="-1"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-cpp">
+                    C++ Complete Syllabus
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h5 class="text-start">Fundamentals of Programming</h5>
+                  <ul class="text-start">
+                    <li>Flowcharts</li>
+                    <li>Variables and Data types</li>
+                    <li>Conditional Statements</li>
+                    <li>Loops</li>
+                    <li>Patterns</li>
+                    <li>Functions</li>
+                    <li>Arrays</li>
+                    <li>2D Arrays</li>
+                    <li>Strings</li>
+                  </ul>
+                  <h5 class="text-start">Object Oriented Programming</h5>
+                  <ul class="text-start">
+                    <li>Basics of OOPS</li>
+                    <li>Advance Concepts of OOPS</li>
+                  </ul>
+                  <h5 class="text-start">Data Structures and Algorithms</h5>
+                  <ul class="text-start">
+                    <li>Time Complexity and Space Complexity</li>
+                    <li>Recursion</li>
+                    <li>Search and Sorting Algorithms with Arrays</li>
+                    <li>Linked List</li>
+                    <li>Stacks</li>
+                    <li>Queues</li>
+                    <li>Trees</li>
+                    <li>Generic Trees</li>
+                    <li>Binary Trees</li>
+                    <li>Binary Search Trees</li>
+                  </ul>
+                  <h5 class="text-start">Advanced Data Structures</h5>
+                  <ul class="text-start">
+                    <li>Priority Queues</li>
+                    <li>Hashmaps</li>
+                    <li>Tries</li>
+                    <li>Graphs</li>
+                  </ul>
+                  <h5 class="text-start">STL</h5>
+                  <ul class="text-start">
+                    <li>Introduction to STL</li>
+                  </ul>
+                  <h5 class="text-start">Dynamic Programming</h5>
+                  <ul class="text-start">
+                    <li>Introduction to Dynamic Programming</li>
+                    <li>Applications of DP</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="files/The Learning Academy CPP Syllabus.pdf"
+                    download="files/The Learning Academy CPP Syllabus.pdf"
+                    class="btn btn-primary"
+                    >Download</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div class="col">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+                  class="mb-3"
+                />
+                <h4 class="card-title mb-3">Interview Preparation with Java</h4>
+                <p class="card-text text-center">
+                  Learn the most versatile, developing and all rounder language
+                  and master the world of backend development.
+                </p>
+
+                <!-- Toggle button for java syllabus modal -->
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-toggle-java"
+                >
+                  Read More...
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal C++ -->
+          <div
+            class="modal fade"
+            id="modal-toggle-java"
+            aria-labelledby="modal-java"
+            aria-hidden="true"
+            tabindex="-1"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-java">
+                    Java Complete Syllabus
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h5 class="text-start">Fundamentals of Programming</h5>
+                  <ul class="text-start">
+                    <li>Flowcharts</li>
+                    <li>Variables and Data types</li>
+                    <li>Conditional Statements</li>
+                    <li>Loops</li>
+                    <li>Patterns</li>
+                    <li>Functions</li>
+                    <li>Arrays</li>
+                    <li>2D Arrays</li>
+                    <li>Strings</li>
+                  </ul>
+                  <h5 class="text-start">Object Oriented Programming</h5>
+                  <ul class="text-start">
+                    <li>Basics of OOPS</li>
+                    <li>Advance Concepts of OOPS</li>
+                    <li>Exception Handling</li>
+                    <li>Generics</li>
+                  </ul>
+                  <h5 class="text-start">Data Structures and Algorithms</h5>
+                  <ul class="text-start">
+                    <li>Time Complexity and Space Complexity</li>
+                    <li>Recursion</li>
+                    <li>Search and Sorting Algorithms with Arrays</li>
+                    <li>Linked List</li>
+                    <li>Stacks</li>
+                    <li>Queues</li>
+                    <li>Trees</li>
+                    <li>Generic Trees</li>
+                    <li>Binary Trees</li>
+                    <li>Binary Search Trees</li>
+                  </ul>
+                  <h5 class="text-start">Advanced Data Structures</h5>
+                  <ul class="text-start">
+                    <li>Priority Queues</li>
+                    <li>Hashmaps</li>
+                    <li>Tries</li>
+                    <li>Graphs</li>
+                  </ul>
+                  <h5 class="text-start">Java Collection</h5>
+                  <ul class="text-start">
+                    <li>Introduction to Java Collections</li>
+                  </ul>
+                  <h5 class="text-start">Dynamic Programming</h5>
+                  <ul class="text-start">
+                    <li>Introduction to Dynamic Programming</li>
+                    <li>Applications of DP</li>
+                  </ul>
+                  <h5 class="text-start">Advance Java</h5>
+                  <ul class="text-start">
+                    <li>Multi-threading</li>
+                    <li>Concurrency Control</li>
+                    <li>File Handling</li>
+                  </ul>
+                  <h5 class="text-start">Java Enterpise Edition</h5>
+                  <ul class="text-start">
+                    <li>JSP</li>
+                    <li>Servlet</li>
+                    <li>Java Beans</li>
+                    <li>Session Management</li>
+                    <li>Hibernate</li>
+                    <li>Spring Framework</li>
+                    <li>Spring MVC</li>
+                    <li>Database Connectivity using JDBC</li>
+                    <li>Restful Api</li>
+                    <li>Spring Boot</li>
+                    <li>Micro services using spring boot</li>
+                    <li>JUnit</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="files/The Learning Academy Java Syllabus.pdf"
+                    download="files/The Learning Academy Java Syllabus.pdf"
+                    class="btn btn-primary"
+                    >Download</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="col">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://img.icons8.com/color/48/000000/python--v1.png"
+                  class="mb-3"
+                />
+                <h4 class="card-title mb-3">
+                  Interview Preparation with Python
+                </h4>
+                <p class="card-text text-center">
+                  Learn the most in demand language right from scratch to master
+                  level and explore Machine Learning, Data Science, Artificial
+                  Intelligence and more...
+                </p>
+
+                <!-- Toggle button for python syllabus modal -->
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-toggle-py"
+                >
+                  Read More...
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal python -->
+          <div
+            class="modal fade"
+            id="modal-toggle-py"
+            aria-labelledby="modal-py"
+            aria-hidden="true"
+            tabindex="-1"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-py">
+                    Python Complete Syllabus
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h5 class="text-start">Fundamentals of Programming</h5>
+                  <ul class="text-start">
+                    <li>Flowcharts</li>
+                    <li>Variables and Data types</li>
+                    <li>Conditional Statements</li>
+                    <li>Loops</li>
+                    <li>Patterns</li>
+                    <li>Functions</li>
+                    <li>Arrays</li>
+                    <li>2D Arrays</li>
+                    <li>Strings</li>
+                  </ul>
+                  <h5 class="text-start">Object Oriented Programming</h5>
+                  <ul class="text-start">
+                    <li>Basics of OOPS</li>
+                    <li>Advance Concepts of OOPS</li>
+                    <li>Exception Handling</li>
+                  </ul>
+                  <h5 class="text-start">Data Structures and Algorithms</h5>
+                  <ul class="text-start">
+                    <li>Time Complexity and Space Complexity</li>
+                    <li>Recursion</li>
+                    <li>Search and Sorting Algorithms with Arrays</li>
+                    <li>Linked List</li>
+                    <li>Stacks</li>
+                    <li>Queues</li>
+                    <li>Trees</li>
+                    <li>Generic Trees</li>
+                    <li>Binary Trees</li>
+                    <li>Binary Search Trees</li>
+                  </ul>
+                  <h5 class="text-start">Advanced Data Structures</h5>
+                  <ul class="text-start">
+                    <li>Priority Queues</li>
+                    <li>Hashmaps</li>
+                    <li>Tries</li>
+                    <li>Graphs</li>
+                  </ul>
+                  <h5 class="text-start">Dynamic Programming</h5>
+                  <ul class="text-start">
+                    <li>Introduction to Dynamic Programming</li>
+                    <li>Applications of DP</li>
+                  </ul>
+                  <h5 class="text-start">Advanced Python</h5>
+                  <ul class="text-start">
+                    <li>Lambda Expressions</li>
+                    <li>Generators and Iterators</li>
+                    <li>Closures</li>
+                    <li>Decorators</li>
+                  </ul>
+                  <h5 class="text-start">Python Libraries</h5>
+                  <ul class="text-start">
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>MatplotLib</li>
+                    <li>Open CV</li>
+                    <li>Pygame</li>
+                    <li>Tkinter</li>
+                    <li>Tensorflow</li>
+                  </ul>
+                  <h5 class="text-start">Backend Development with Python</h5>
+                  <ul class="text-start">
+                    <li>Introduction to Django</li>
+                    <li>Introduction to Flask</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="files/The Learning Academy Python Syllabus.pdf"
+                    download="files/The Learning Academy Python Syllabus.pdf"
+                    class="btn btn-primary"
+                    >Download</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordian -->
+    <section class="p-5" id="faq">
+      <div class="container">
+        <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Question 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-1"
+              >
+                Q. For how long the purchased courses will be available?
+              </button>
+            </h2>
+            <div
+              id="question-1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Ans. Once the course is purchased, it is available to the user
+                for his/ her lifetime.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-2"
+              >
+                Q. What if I didn't like the course?
+              </button>
+            </h2>
+            <div
+              id="question-2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Ans: If you are not comfortable with the teachings you can apply
+                for a refund within 15 days from the date of purchase provided
+                you accept the terms and conditions.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-3"
+              >
+                Q. Is there a Job Guarantee?
+              </button>
+            </h2>
+            <div
+              id="question-3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Ans: Yes. After you complete the course and pass the
+                certification test with minimum 80%, we will share you marks and
+                resume with some of major tech companies which are hire from us.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-4"
+              >
+                Q. Are there any pre-requesites?
+              </button>
+            </h2>
+            <div
+              id="question-4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Ans: Not at all. We teach all the technologies from scratch and
+                concentrate on providing fundamental knowledge at first and then
+                move on to the advance concepts.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center text-white mb-5">Our Instructors</h2>
+        <div class="row justify-content-evenly">
+          <div class="col-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="images/parth.jpg"
+                  alt="parth maru"
+                  class="rounded-circle mb-3 w-100"
+                />
+                <h4 class="card-title mb-3">Parth Maru</h4>
+                <p class="card-text">
+                  Founder, The Learning Academy <br />Associate Software
+                  Engineer, Mphasis
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="images/priya1.jpg"
+                  alt="parth maru"
+                  class="rounded-circle mb-3 w-100"
+                />
+                <h4 class="card-title mb-3">Priya Mishra</h4>
+                <p class="card-text">
+                  Co-Founder, The Learning Academy <br />System Engineer, TCS
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="images/pushpa3.jpg"
+                  alt="parth maru"
+                  class="rounded-circle mb-3 w-100"
+                />
+                <h4 class="card-title mb-3">Pushpa Yadav</h4>
+                <p class="card-text">
+                  Co-Founder, The Learning Academy <br />Software Engineer,
+                  Capgemini
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2 bg-dark text-white text-center">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 The Learning Academy</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
